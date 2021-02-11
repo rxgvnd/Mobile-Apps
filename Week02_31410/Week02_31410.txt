@@ -1,0 +1,19 @@
+2. Lakukan pengujian terhadap app anda dengan skenario di bawah ini:
+	a. Kosongkan Angka 1 dan Angka 2, lalu klik salah satu button
+	b. Kosongkan Angka 2, lalu klik button Bagi
+	c. Isi 0 (nol) pada Angka 2, lalu klik button Bagi
+
+	Tuliskan penjelasan apa yang terjadi, jika terjadi error jelaskan apa errornya dan kemungkinan penyebabnya, serta langkah-langkah apa yang dapat memperbaiki error tersebut.
+
+	Untuk kasus a dan kasus b akan menghasilkan Fatal Error : Empty String (Number Format Exception) dimana pada kasus a tidak terdapat integer apapun untuk dioperasikan dan pada kasus b tidak memiliki pembagi (NULL).
+	Pada kasus c, sedikit berbeda dengan kasus b dimana kedua kasus tersebut sama sama merupakan pembagian, namun untuk kasus c tidak menghasilkan Fatal Eror karena terdapat integer/value yaitu 0.
+	Langkah-langkah yang dapat dilakukan untuk mengatasi eror adalah:
+	- Menggunakan form validator
+	- Menggunakan try-catch untuk mengatasi exception.
+
+3. Lakukan debugging pada program anda dengan meletakkan dua breakpoint bebas letaknya. Gunakan langkah-langkah step-over, step-into, step-out, dan resume. Tuliskan kesimpulan hasil debugging.
+
+	Step-Over: Debugger akan running sebuah line/baris dimana debug tersebut akan berhenti lalu akan lanjut ke line berikutnya dan akan berhenti sementara.
+	Step-Into: Jika pada line tertentu memanggil semua metode dimana debug tersebut berhenti, maka debugger akan masuk ke dalam metode yang dipanggil tersebut.
+	Step-Out: Debugger akan menyelesaikan sampai akhir dari blok atau akhir dari sebuah metode dan akan kembali ke line semula dimana user melakukan Step-Into
+	Resume: Resume akan menjalankan kembali program tersebut setelah breakpoint.
