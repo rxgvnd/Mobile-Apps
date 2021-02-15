@@ -4,3 +4,5 @@ Pada saat memasuki applikasi, akan muncul kata 1 sampai kata 20.
 Ketika menekan salah satu katanya, contoh saja "Kata 10", maka kata 10 akan menjadi "Kata 10 pernah diklik"
 Jika kata yang sudah di klik di klik kembali, maka kata "pernah di klik" akan muncul sesuai dengan jumlah user mengklik kata tersebut.
 Ketika user menekan tombol plus pada pojok kanan bawah, akan muncul kata "21 telah ditambahkan" dan seterusnya.
+
+Link Github: https://github.com/rxgvnd/Mobile-Apps.git
