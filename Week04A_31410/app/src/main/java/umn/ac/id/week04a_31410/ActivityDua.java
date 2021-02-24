@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class ActivityDua extends AppCompatActivity {
+
     private TextView tvPesanDiterima;
     private EditText etJawaban;
     private Button btnBalasKirim;
@@ -22,10 +23,11 @@ public class ActivityDua extends AppCompatActivity {
         etJawaban = findViewById(R.id.pesanBalik);
         btnBalasKirim = findViewById(R.id.kirimBalik);
         Intent mainIntent = getIntent();
-        String pesanDiterima = mainIntent.getStringExtra("PesanDariMain");
+        String pesanDiterima =
+                mainIntent.getStringExtra("PesanDariMain");
         tvPesanDiterima.setText(pesanDiterima);
     }
-    public void kirimBalik(View view) {
+    public void kirimBalik(View view){
         String jawaban = etJawaban.getText().toString();
         Intent balasIntent = new Intent();
         balasIntent.putExtra("Jawaban", jawaban);
