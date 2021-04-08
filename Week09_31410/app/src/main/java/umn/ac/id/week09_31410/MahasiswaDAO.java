@@ -12,7 +12,7 @@ import java.util.List;
 
 @Dao
 public interface MahasiswaDAO {
-    @Query("SELECR * FROM tblMahasiswa")
+    @Query("SELECT * FROM tblMahasiswa")
     LiveData<List<Mahasiswa>> getAllMahasiswa();
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
